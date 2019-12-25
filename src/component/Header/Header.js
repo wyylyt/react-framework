@@ -40,7 +40,20 @@ export default class Header extends Component {
             >axiosTest
             </NavLink>
           </Menu.Item>
-
+          <Menu.Item key="/hoc">
+            <NavLink
+              to="/hoc"
+              activeClassName="selected"
+            >高阶组件
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item key="/renderProps">
+            <NavLink
+              to="/renderProps"
+              activeClassName="selected"
+            >RenderProps
+            </NavLink>
+          </Menu.Item>
         </Menu>
       </div>
     );

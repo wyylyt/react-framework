@@ -8,9 +8,10 @@ export default class ContextDemo extends Component {
     }
 
     render() {
+      const { contextVal } = this.context;
       return (
-        <div onClick={this.contextOnClick}>
-              context
+        <div onClick={this.contextOnClick} style={{width:'100%',height:'100%'}}>
+              {contextVal}
         </div>
       );
     }
