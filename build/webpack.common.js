@@ -60,6 +60,8 @@ module.exports = {
         alias: {
           // 图片别名
           img: path.resolve(__dirname, '../src/public/images'),
+          //第三方的一些js
+          js: path.resolve(__dirname, '../src/public/js'),
         },
     },
     plugins:[

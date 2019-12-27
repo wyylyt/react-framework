@@ -1,4 +1,6 @@
 import axios from 'axios';
+import axiosToken from "js/axiosToken.js";
+
 // import dateBg from "../../public/images/dateBg.png";
 import dateBg from "img/dateBg.png";
 // import warnIcon from "../../public/images/warnIcon.png";
@@ -7,7 +9,10 @@ import  "../../public/fonts/iconfont.css";
 // eslint-disable-next-line no-undef
 export default class AxiosTest extends Component {
   componentDidMount() {
-    axios.get('/test')
+    axiosToken({
+      method: 'get',
+      url: '/test',
+    })
       .then((response) => {
         console.log('response', response);
       })
